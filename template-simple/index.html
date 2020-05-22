@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            height: 100%;
+        }
+        body {
+            color: #343239;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color: #666564;
+            text-decoration: none;
+        }
+        a:hover {
+            /* color: #777674; */
+            opacity: .7;
+        }
+        header {
+            padding: 20px 0;
+            color: #fbf9fb;
+            background-color: #343239;
+        }
+        main {
+            padding: 20px 0;
+            flex: 1 1 auto;;
+        }
+        aside {
+            padding: 20px 0;
+            margin-left: 20px;
+            flex: 0 0 270px;
+        }
+        aside section {
+            padding: 20px;
+            background-color: #e3e1e3;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        p {
+            margin: 10px 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 1140px;
+            padding: 0 20px;
+            margin: 0 auto;
+        }
+        .footer-copyright {
+            padding: 20px 0;
+            color: #fbf9fb;
+            background-color: #343239;
+        }
+        .footer-info {
+            padding: 20px 0;
+            color: #fbf9fb;
+            background-color: #e3e1e3;
+            height: 100px;
+        }
+        .primary {
+            background-color: #fbf9fb;
+        }
+        .main-navigation {
+            background-color: #e3e1e3;
+        }
+        .main-navigation ul li {
+            display: inline;
+            list-style-type: none;
+            margin-right: 20px;
+        }
+        .main-navigation ul li:last-child {
+            margin-right: 0 !important;
+        }
+        .main-navigation ul {
+            padding: 20px 0;
+        }
+        .btn {
+            display: inline-block;
+            font-weight: 400;
+            color: #fbf9fb;
+            text-align: center;
+            vertical-align: middle;
+            cursor: pointer;
+            user-select: none;
+            background-color: #f03d33;
+            border: 1px solid #f03d33;
+            padding: .375rem .75rem;
+            border-radius: .25rem;
+        }
+        .base {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Header</h1>
+        </div>
+    </header>
+    <nav class="main-navigation">
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Articles</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="primary">
+        <div class="base container">
+            <aside>
+                <section id="message-block">
+                    <h3>Menu</h3>
+                    <hr>
+                    <p>
+                        Et harum quidem rerum facilis est et expedita distinctio
+                    </p>
+                </section>
+            </aside>
+            <main>
+                <h2>How can I help you?</h2>
+                <p>
+                    Et harum quidem rerum facilis est et expedita distinctio, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, nisi ut aliquid ex ea commodi consequatur?
+                </p>
+                <p>
+Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat!
+</p><p>
+Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+</p><p>
+Nemo enim ipsam voluptatem, quis nostrum exercitationem ullam corporis suscipit laboriosam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. At vero eos et accusamus et iusto odio dignissimos ducimus, consectetur adipiscing elit, qui dolorem eum fugiat, quo voluptas nulla pariatur. Nemo enim ipsam voluptatem, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, sunt in culpa qui officia deserunt mollit anim id est laborum. Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem ipsum, quia dolor sit, amet,...
+                </p>
+                <button id="get-support" class="btn" onclick="showMessage()">Get support</button>
+            </main>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-info">
+            <div class="container">
+
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2019 Evgeny Tupikov
+            </div>
+        </div>
+    </footer>
+    <script>
+        function showMessage() {
+
+            let messageBlock = document.querySelector('#message-block');
+            
+            if(document.querySelector('#created-message')) {
+                document.querySelector('#created-message').remove();
+            } else {
+                let p = document.createElement('p');
+                p.id = 'created-message';
+                p.innerHTML = 'Hello, I\'m a support!';
+                messageBlock.append(p);
+            }
+
+        }
+    </script>
+</body>
+</html>

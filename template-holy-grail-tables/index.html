@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Classic Template</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    * {
+        box-sizing: border-box;
+    }
+    html, body { 
+        height: 100%; 
+    }
+    body { 
+        margin: 0;
+        font-family: Roboto, "Helvetica Neue", sans-serif; 
+    }
+    .link-active {
+        background: rgba(0,0,0,.04);
+    }
+    .container {
+        color: #2b2b2b;
+        min-height: 100%;
+    }
+    .header {
+        position: absolute;
+        width: 100%;
+        height: 100px;
+        background-color: lightblue;
+        box-shadow: 0 3px 5px -1px rgba(0,0,0,.2);
+    }
+    .main {
+        display: table;
+        padding-top: 100px;
+        height: calc(100vh - 100px);
+        width: 100%;
+    }
+
+    .footer {
+        background-color: darkseagreen;
+        height: 100px;
+    }
+
+    .link {
+        display: block;
+        color: #2b2b2b;
+        text-decoration: none;
+        padding: 10px;
+    }
+    .link:hover {
+            background: rgba(0,0,0,.04);
+        }
+    h1 {
+            font-size: 180%;
+            margin: 0;
+        }
+    h2 {
+        font-size: 150%;
+        margin: 0;
+    }
+    .aside {
+        width: 270px;;
+        display: table-cell;
+        vertical-align: top;
+        background-color: bisque;
+    }
+    .content {
+        display: table-cell;
+        vertical-align: top;
+        background-color: antiquewhite;
+    }
+    .header, .aside, .content, .footer {
+        padding: 20px;
+    }
+  </style>
+</head>
+<body>
+        <div class="container">
+                <div class="header padding">
+                  <h1>Header</h1>
+                  <div>
+                      Должен быть наверху, но не зафиксирован.
+                  </div>
+                </div>
+                <div class="main">
+                  <div class="aside padding">
+                      <a class="link link-active" href="#">Home</a>
+                      <a class="link" href="#">Template</a>
+                  </div>
+                  <div class="content padding">
+                    С другой стороны социально-экономическое развитие создаёт предпосылки качественно новых шагов для соответствующих условий активизации! Практический опыт показывает, что социально-экономическое развитие создаёт предпосылки качественно новых шагов для экономической целесообразности принимаемых решений. Соображения высшего порядка, а также постоянное информационно-техническое обеспечение нашей деятельности играет важную роль в формировании ключевых компонентов планируемого обновления. С другой стороны начало повседневной работы по формированию позиции способствует повышению актуальности новых предложений.
+                    <p>
+                        Соображения высшего порядка, а также постоянное информационно-техническое обеспечение нашей деятельности требует от нас анализа модели развития? Разнообразный и богатый опыт рамки и место обучения кадров обеспечивает актуальность форм воздействия. Таким образом, сложившаяся структура организации способствует подготовке и реализации системы обучения кадров, соответствующей насущным потребностям. Соображения высшего порядка, а также постоянный количественный рост и сфера нашей активности напрямую зависит от экономической целесообразности принимаемых решений. С другой стороны повышение уровня гражданского сознания позволяет оценить значение дальнейших направлений развития проекта.
+                    <br><br>
+                        Равным образом социально-экономическое развитие играет важную роль в формировании форм воздействия. Таким образом, рамки и место обучения кадров обеспечивает актуальность ключевых компонентов планируемого обновления.
+                    <br><br>
+                        Практический опыт показывает, что социально-экономическое развитие позволяет выполнить важнейшие задания по разработке соответствующих условий активизации. Дорогие друзья, выбранный нами инновационный путь способствует подготовке и реализации дальнейших направлений развитая системы массового участия. Равным образом начало повседневной работы... 
+                    </p>    
+                  </div>
+                </div>
+                <div class="footer padding">
+                  <h2>
+                    Footer
+                  </h2>
+                  <div>
+                    Должен быть всегда снизу, но не зафиксирован к нижней части экрана, а прокручиваться!
+                  </div>
+                </div>
+              </div>
+</body>
+</html>
